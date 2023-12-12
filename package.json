@@ -1,6 +1,6 @@
 {
-  "name": "react-quiz",
   "homepage": "http://juanmadalena.github.io/react-quiz/",
+  "name": "react-quiz",
   "private": true,
   "version": "0.0.0",
   "type": "module",

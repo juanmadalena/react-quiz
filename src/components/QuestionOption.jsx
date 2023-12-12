@@ -16,7 +16,7 @@ export default function QuestionOption({choices}) {
             {choices.map((choice, index) => (
                 <motion.div
                     key={index}
-                    className='border w-full p-8 pl-16 rounded-lg flex items-center justify-between hover:bg-neutral-700 hover:cursor-pointer' 
+                    className='border w-full p-4 lg:p-8 pl-16 rounded-lg flex items-center justify-between hover:bg-neutral-700 hover:cursor-pointer' 
                     initial={{ opacity: 0 }}
                     animate={answers[currentQuestion] === choice ? { backgroundColor: 'rgba(34 197 94, 1)', opacity: 1 } : { backgroundColor: '#262626' ,opacity: 1, transition: { duration: 0.4, delay: index / 50 } }}
                     exit={{ opacity: 0}}

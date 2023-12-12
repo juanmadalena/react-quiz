@@ -34,7 +34,7 @@ export default function Questions() {
         <>
             <AppBar/>
             <AnimatePresence mode='wait'>
-            <section className='h-[calc(100vh-6.5rem)] w-full flex flex-col justify-between px-10'>
+            <section className='h-[calc(100svh-6.5rem)] w-full flex flex-col justify-between px-10'>
                 <div className='h-1/4'>
                     <QuestionTitle question={questions[currentQuestion].question}/>
                 </div>

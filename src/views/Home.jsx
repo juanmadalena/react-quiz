@@ -35,7 +35,7 @@ export default function Home() {
         </h1>
       </section>
       <div className="text-center">
-        <Link to={'/Quiz'} onClick={handleStartQuiz}>
+        <Link to={'/react-quiz/Quiz'} onClick={handleStartQuiz}>
           <motion.button 
             className='text-lg font-medium px-6 py-4 rounded-md bg-neutral-900 shadow-md hover:shadow-lg'
             whileHover={{ scale: 1.05 }}

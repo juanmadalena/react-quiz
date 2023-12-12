@@ -52,7 +52,7 @@ export default function Questions() {
                             animation={'arrow'}    
                         />
                         :
-                        <Link to={'/results'}>
+                        <Link to={'/react-quiz/results'}>
                             <Button 
                                 action={handleFinishButton} 
                                 text={'Finish'} 

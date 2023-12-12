@@ -71,7 +71,7 @@ export default function Results() {
                 </h1>
             </div>
             <div className='text-neutral-600 font-semibold text-center'>
-                <Link to={'/'}>
+                <Link to={'/react-quiz/'}>
                 <p>
                     Go home!
                 </p>

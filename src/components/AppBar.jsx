@@ -15,7 +15,7 @@ export default function AppBar() {
                     initial={{ opacity: 0}}
                     animate={{ opacity: 1 }}
                 >
-                    <Link to={'/'} onClick={resetQuiz}>
+                    <Link to={'/react-quiz/'} onClick={resetQuiz}>
                         <FaArrowLeftLong className='text-2xl'/>
                     </Link>
                 </motion.div>

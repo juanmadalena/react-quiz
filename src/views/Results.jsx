@@ -66,7 +66,7 @@ export default function Results() {
                 <h1 className='text-8xl mb-4'>
                     { correctAnswers ?? 0 } / { questions.length }
                 </h1>
-                <h1 className='lufga text-4xl lg:text-9xl block'>
+                <h1 className='lufga text-center text-4xl lg:text-9xl block'>
                     {text()}
                 </h1>
             </div>

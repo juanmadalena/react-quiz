@@ -11,9 +11,9 @@ function App() {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Home />} />
-        <Route path="/quiz" element={<Questions />} />
-        <Route path="/results" element={<Results />} />
+        <Route path="/react-quiz/" element={<Home />} />
+        <Route path="react-quiz/quiz" element={<Questions />} />
+        <Route path="react-quiz/results" element={<Results />} />
       </Routes>
     </AnimatePresence>
   )

@@ -23,10 +23,10 @@ export default function QuestionOption({choices}) {
                     whileTap={{ scale: 0.9, transition: { duration: 0.4 } }}
                     onClick={() => handleOptionClick(choice)}
                 >
-                    <span className='text-lg font-semibold lg:text-xl'>
+                    <span className='text-base font-semibold lg:text-xl'>
                         {choice}
                     </span>
-                    <span className='text-2xl'>
+                    <span className=' text-lg lg:text-2xl'>
                         {answers[currentQuestion] === choice ? <FaCheck/> : ''}
                     </span>
                 </motion.div>

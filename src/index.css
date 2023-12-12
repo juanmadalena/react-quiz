@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font */
+@font-face {
+  font-family: 'lufga';
+  src: local('lufga'),
+      url('./assets/font/Fontspring-DEMO-lufga-regular.otf') format('opentype');
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* ancho del scrollbar */
+}
+
+.logo {
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.lufga{
+  font-family: 'lufga';
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo-spin, .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}

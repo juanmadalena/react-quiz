@@ -5,9 +5,8 @@ import QuestionOption from '../components/QuestionOption.jsx';
 import Button from '../components/Button.jsx';
 import { FaArrowRightLong, FaArrowLeftLong, FaCheck } from "react-icons/fa6";
 import { AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useEffect } from 'react';
-import { useTitle } from '../assets/hooks/useTitle.js';
 
 
 export default function Questions() {

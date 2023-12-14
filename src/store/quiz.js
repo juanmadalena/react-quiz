@@ -1,11 +1,12 @@
 import { create } from 'zustand'
-import { quizQuestions } from '../data/quizQuestions'
+import { quizes } from '../data/quizQuestions'
 
 export const useQuizStore = create(
     (set) => ({
+        quizes: quizes,
         isQuizStarted: false,
         isQuizFinished: false,
-        questions: quizQuestions,
+        questions: null,
         currentQuestion: 0,
         answers:[],
         startQuiz: () => set(() => ({ isQuizStarted: true })),
@@ -18,6 +19,15 @@ export const useQuizStore = create(
             const updatedAnswers = [...state.answers];
             updatedAnswers[state.currentQuestion] = answer
             return { answers: updatedAnswers }
-        })
+        }),
+        getQuizesTitles: () => {
+            const titles = quizes.map((quiz) => quiz.title)
+            return titles
+        },
+        setQuiz: (id) => {
+            const { questions } = quizes.find((quiz) => quiz.id === id)
+            console.log(questions);
+            set(() => ({ questions }))
+        }
     })
 )

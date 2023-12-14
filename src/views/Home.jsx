@@ -1,18 +1,18 @@
-import React from 'react'
+import { useState } from 'react'
 import reactLogo from '../assets/react.svg'
 import { useQuizStore } from '../store/quiz'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useTitle } from '../assets/hooks/useTitle'
+import QuizList from '../components/QuizList'
 
 
 export default function Home() {
 
-  const { startQuiz, resetQuiz } = useQuizStore()
+  const [showQuiz, setShowQuiz] = useState(false)
 
-  function handleStartQuiz(){
-    resetQuiz()
-    startQuiz()
+  function handleCloseQuiz(){
+    setShowQuiz(false)
   }
 
   useTitle('React Quiz App')
@@ -35,15 +35,15 @@ export default function Home() {
         </h1>
       </section>
       <div className="text-center">
-        <Link to={'/react-quiz/Quiz'} onClick={handleStartQuiz}>
           <motion.button 
             className='text-lg font-medium px-6 py-4 rounded-md bg-neutral-900 shadow-md hover:shadow-lg'
             whileHover={{ scale: 1.05 }}
+            onClick={() => setShowQuiz(true)}
           >
             Start quiz !
           </motion.button>
-        </Link>
       </div>
+      { showQuiz && <QuizList close={handleCloseQuiz}/> }
     </motion.div>
   </>
   )

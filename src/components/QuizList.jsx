@@ -25,7 +25,7 @@ export default function QuizList({close}) {
             onClick={close}
         >
             <div 
-                className="flex flex-col overflow-scroll gap-10 h-4/5 w-11/12 lg:h-2/3 lg:w-2/4 pt-4 px-8 bg-neutral-900 rounded-md shadow-lg font-medium text-white"
+                className="flex flex-col overflow-scroll gap-10 h-3/4 w-11/12 lg:h-2/3 lg:w-2/4 pt-4 px-8 bg-neutral-900 rounded-md shadow-lg font-medium text-white"
                 onClick={(e) => e.stopPropagation()}
             >
                 <div className="">

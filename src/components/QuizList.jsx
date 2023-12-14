@@ -25,7 +25,7 @@ export default function QuizList({close}) {
             onClick={close}
         >
             <div 
-                className="flex flex-col gap-10 h-2/3 w-2/4 pt-4 px-8 bg-neutral-900 rounded-md shadow-lg font-medium text-white"
+                className="flex flex-col overflow-scroll gap-10 h-4/5 w-11/12 lg:h-2/3 lg:w-2/4 pt-4 px-8 bg-neutral-900 rounded-md shadow-lg font-medium text-white"
                 onClick={(e) => e.stopPropagation()}
             >
                 <div className="">
@@ -33,7 +33,7 @@ export default function QuizList({close}) {
                         Choose a quiz
                     </h2>
                 </div>
-                <div className="grid grid-cols-2 grid-rows-5 gap-2 h-5/6">
+                <div className="grid gap-8 lg:grid-cols-2 lg:grid-rows-5 lg:gap-2 h-5/6">
                     {getQuizesTitles()?.map((title, i) => (
                         <Link to={`/react-quiz/quiz/`} onClick={() => handleStartQuiz(i)}>
                             <motion.div
